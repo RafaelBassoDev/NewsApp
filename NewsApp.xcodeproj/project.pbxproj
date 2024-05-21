@@ -16,6 +16,7 @@
 		550869D82BFC9EBA00539824 /* NewsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869D72BFC9EBA00539824 /* NewsAppTests.m */; };
 		550869E22BFC9EBA00539824 /* NewsAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869E12BFC9EBA00539824 /* NewsAppUITests.m */; };
 		550869E42BFC9EBA00539824 /* NewsAppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869E32BFC9EBA00539824 /* NewsAppUITestsLaunchTests.m */; };
+		550869F92BFCE2C600539824 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869F82BFCE2C600539824 /* NewsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		550869DD2BFC9EBA00539824 /* NewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		550869E12BFC9EBA00539824 /* NewsAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAppUITests.m; sourceTree = "<group>"; };
 		550869E32BFC9EBA00539824 /* NewsAppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAppUITestsLaunchTests.m; sourceTree = "<group>"; };
+		550869F72BFCE2C600539824 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		550869F82BFCE2C600539824 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,10 +170,20 @@
 		550869F52BFCE22100539824 /* NewsHub */ = {
 			isa = PBXGroup;
 			children = (
+				550869F62BFCE2A100539824 /* NewsCell */,
 				550869C12BFC9EB700539824 /* NewsHubViewController.h */,
 				550869C22BFC9EB700539824 /* NewsHubViewController.m */,
 			);
 			path = NewsHub;
+			sourceTree = "<group>";
+		};
+		550869F62BFCE2A100539824 /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				550869F72BFCE2C600539824 /* NewsCell.h */,
+				550869F82BFCE2C600539824 /* NewsCell.m */,
+			);
+			path = NewsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +319,7 @@
 				550869BD2BFC9EB700539824 /* AppDelegate.m in Sources */,
 				550869CE2BFC9EB900539824 /* main.m in Sources */,
 				550869C02BFC9EB700539824 /* SceneDelegate.m in Sources */,
+				550869F92BFCE2C600539824 /* NewsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
