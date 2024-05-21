@@ -6,6 +6,7 @@
 //
 
 #import "NewsHubViewController.h"
+#import "NewsCell/NewsCell.h"
 
 @interface NewsHubViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) UITableView* tableView;
@@ -25,7 +26,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-//    [self.tableView registerClass: forCellReuseIdentifier:];
+    [self.tableView registerClass:NewsCell.class forCellReuseIdentifier:NewsCell.identifier];
     
     [self.view addSubview:self.tableView];
     
@@ -36,11 +37,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString* cellIdentifier = @"cellIdentifier";
-    UITableViewCell* cell = [self.tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    NewsCell* cell = [self.tableView dequeueReusableCellWithIdentifier:NewsCell.identifier forIndexPath:indexPath];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        UITableViewCell* defaultCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"defaultCell"];
+        defaultCell.textLabel.text = [_content objectAtIndex:indexPath.row];
+        return defaultCell;
     }
     
     cell.textLabel.text = [_content objectAtIndex:indexPath.row];
