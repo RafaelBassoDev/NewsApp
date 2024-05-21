@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		550869BD2BFC9EB700539824 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869BC2BFC9EB700539824 /* AppDelegate.m */; };
 		550869C02BFC9EB700539824 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869BF2BFC9EB700539824 /* SceneDelegate.m */; };
-		550869C32BFC9EB700539824 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869C22BFC9EB700539824 /* ViewController.m */; };
+		550869C32BFC9EB700539824 /* NewsHubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869C22BFC9EB700539824 /* NewsHubViewController.m */; };
 		550869C82BFC9EB900539824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 550869C72BFC9EB900539824 /* Assets.xcassets */; };
 		550869CB2BFC9EB900539824 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 550869CA2BFC9EB900539824 /* Base */; };
 		550869CE2BFC9EB900539824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869CD2BFC9EB900539824 /* main.m */; };
@@ -41,8 +41,8 @@
 		550869BC2BFC9EB700539824 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		550869BE2BFC9EB700539824 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		550869BF2BFC9EB700539824 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		550869C12BFC9EB700539824 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		550869C22BFC9EB700539824 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		550869C12BFC9EB700539824 /* NewsHubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsHubViewController.h; sourceTree = "<group>"; };
+		550869C22BFC9EB700539824 /* NewsHubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsHubViewController.m; sourceTree = "<group>"; };
 		550869C72BFC9EB900539824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		550869CA2BFC9EB900539824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		550869CC2BFC9EB900539824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,8 +128,7 @@
 		550869F02BFCA25600539824 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				550869C12BFC9EB700539824 /* ViewController.h */,
-				550869C22BFC9EB700539824 /* ViewController.m */,
+				550869F42BFCE21A00539824 /* ViewController */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -155,6 +154,23 @@
 				550869BF2BFC9EB700539824 /* SceneDelegate.m */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		550869F42BFCE21A00539824 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				550869F52BFCE22100539824 /* NewsHub */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		550869F52BFCE22100539824 /* NewsHub */ = {
+			isa = PBXGroup;
+			children = (
+				550869C12BFC9EB700539824 /* NewsHubViewController.h */,
+				550869C22BFC9EB700539824 /* NewsHubViewController.m */,
+			);
+			path = NewsHub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550869C32BFC9EB700539824 /* ViewController.m in Sources */,
+				550869C32BFC9EB700539824 /* NewsHubViewController.m in Sources */,
 				550869BD2BFC9EB700539824 /* AppDelegate.m in Sources */,
 				550869CE2BFC9EB900539824 /* main.m in Sources */,
 				550869C02BFC9EB700539824 /* SceneDelegate.m in Sources */,

@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "NewsHubViewController.h"
 
 @interface SceneDelegate ()
 
@@ -21,7 +21,7 @@
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
     UIWindowScene* windowScene = (UIWindowScene*) scene;
     _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController* viewController = [[ViewController alloc] init];
+    NewsHubViewController* viewController = [[NewsHubViewController alloc] init];
     
     UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     
