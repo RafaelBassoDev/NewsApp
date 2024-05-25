@@ -17,6 +17,7 @@
 		550869E22BFC9EBA00539824 /* NewsAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869E12BFC9EBA00539824 /* NewsAppUITests.m */; };
 		550869E42BFC9EBA00539824 /* NewsAppUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869E32BFC9EBA00539824 /* NewsAppUITestsLaunchTests.m */; };
 		550869F92BFCE2C600539824 /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 550869F82BFCE2C600539824 /* NewsCell.m */; };
+		55F96BDD2BFE5560003767A3 /* NewsModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 55F96BDC2BFE5560003767A3 /* NewsModel.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		550869E32BFC9EBA00539824 /* NewsAppUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsAppUITestsLaunchTests.m; sourceTree = "<group>"; };
 		550869F72BFCE2C600539824 /* NewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		550869F82BFCE2C600539824 /* NewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		55F96BDC2BFE5560003767A3 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		550869F62BFCE2A100539824 /* NewsCell */ = {
 			isa = PBXGroup;
 			children = (
+				55F96BDC2BFE5560003767A3 /* NewsModel.h */,
 				550869F72BFCE2C600539824 /* NewsCell.h */,
 				550869F82BFCE2C600539824 /* NewsCell.m */,
 			);
@@ -317,6 +320,7 @@
 			files = (
 				550869C32BFC9EB700539824 /* NewsHubViewController.m in Sources */,
 				550869BD2BFC9EB700539824 /* AppDelegate.m in Sources */,
+				55F96BDD2BFE5560003767A3 /* NewsModel.h in Sources */,
 				550869CE2BFC9EB900539824 /* main.m in Sources */,
 				550869C02BFC9EB700539824 /* SceneDelegate.m in Sources */,
 				550869F92BFCE2C600539824 /* NewsCell.m in Sources */,
