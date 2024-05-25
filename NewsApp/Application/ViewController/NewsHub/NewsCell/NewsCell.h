@@ -6,7 +6,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewsModel.h"
 
 @interface NewsCell : UITableViewCell
 + (NSString*) identifier;
+- (void) setupWithNews:(NewsModel) news;
 @end
